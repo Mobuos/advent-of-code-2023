@@ -58,7 +58,7 @@ fn combine_line(input: &str) -> u32 {
 
     let first = first.expect("Failed to get first digit");
     let last = last.unwrap_or(first);
-    format!("{}{}", first, last).parse::<u32>().unwrap()
+    first * 10 + last
 }
 
 // Solves the problem for a given input
